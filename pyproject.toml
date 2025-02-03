@@ -5,8 +5,11 @@ build-backend = "hatchling.build"
 [project]
 name = 'idk'
 description = 'idk'
-
+version = "1.0"
 dependencies = [
     "pygame",
     "django"
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
